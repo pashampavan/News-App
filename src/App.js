@@ -5,7 +5,7 @@ import React, { Component } from 'react'
 import Navbar from './components/Navbar';
 import News from './components/News';
 import {
-  BrowserRouter as Router,
+  BrowserRouter,
   Switch,
   Route
 } from "react-router-dom";
@@ -13,11 +13,11 @@ export default class App extends Component {
   render() {
     return (
       <div>
-        <Router>
+        <BrowserRouter basename='/News-App'>
 
         < Navbar />
         <Switch>
-          <Route exact key='general' path="/">
+          <Route exact key='general' path="/News-App">
                 <News category="general"/>    
           </Route>
           <Route exact key='general' path="/general">
@@ -42,7 +42,7 @@ export default class App extends Component {
                 <News category="technology"/>    
           </Route>
         </Switch>
-        </Router>
+        </BrowserRouter>
       </div>
     )
   }
