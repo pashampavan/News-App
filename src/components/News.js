@@ -28,8 +28,9 @@ const  handleNext= async ()=>{
         let url=`https://newsapi.org/v2/top-headlines?country=us&category=${    props.category}&apiKey=20f8a31a0551421bbe5bd175ac76b9bf&pageSize=6&page=${  page-1}`;
         let data=await fetch(url);
         let parseData=await data.json();
+        console.log(parseData);
         setArticles(parseData.articles);
-        setPage(page+1)
+        setPage(page+1);
     }
 }
 const handlePrevious= async ()=>{
