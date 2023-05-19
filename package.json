@@ -1,6 +1,6 @@
 {
-  "homepage": "https://pashampavan.github.io/News-App",
   "name": "News-App",
+  "homepage": "https://pashampavan.github.io/News-App",
   "version": "0.1.0",
   "private": false,
   "dependencies": {
